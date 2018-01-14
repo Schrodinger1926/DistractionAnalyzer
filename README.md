@@ -1,6 +1,6 @@
-#Check on distractions during code sprints 
+# Check on distractions during code sprints 
 
-##USAGE:
+## USAGE:
 
 $ python cli.py
 
@@ -19,20 +19,20 @@ Just press enter everytime you feel distracted
 .  
 (cmd)  
 
-##Get your distraction spikes/min report when you're done!
+## Get your distraction spikes/min report when you're done!
 
 (cmd) report
 
 
-##example report
+## example report
 
 ![Alt text](/assets/spike.png?raw=true)
 
 don't be scared about negative values, its a high degree fit. Looking into it
 
-##Python 2.7.10
+## Python 2.7.10
 
-##requirements:
+## requirements:
 
 matplotlib==2.0.2  
 numpy==1.13.0  
