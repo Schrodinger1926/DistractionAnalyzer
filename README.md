@@ -19,12 +19,14 @@ Just press enter everytime you feel distracted
 .
 (cmd)
 
-Get your report when you're done!
+Get your distraction spikes/min report when you're done!
 
 (cmd) report
 
 
-example report
+example report,
+![Alt text](/assets/spike.png?raw=true)
+don't be scared about negative values, its a high degree fit. Looking into it
 
 Python 2.7.10
 
