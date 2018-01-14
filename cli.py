@@ -17,7 +17,11 @@ class HelloWorld(cmd.Cmd):
 		self.data.append(time()-self.start)
 
 	
-	def do_report(self, line):
+	def do_report(self, arg):
+
+		# minute window set to 60 secs
+		window = 2
+		
 		# Initialize Minute hand and data index
 		i, j = 1, 0
 
@@ -28,7 +32,7 @@ class HelloWorld(cmd.Cmd):
 		while (j < len(self.data)):
 
 			# If time stamp under current minute window
-			if self.data[j] < i*60:x
+			if self.data[j] < i*int(window):
 				spikes += 1
 				j += 1
 
@@ -65,7 +69,7 @@ class HelloWorld(cmd.Cmd):
 		return (x_smooth, y_smooth)
 
 	
-	def do_EOF(self, line):
+	def do_EOF(self):
 		return True
 
 
